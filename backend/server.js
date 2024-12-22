@@ -24,9 +24,9 @@ mongoose.connect(url)
     })
     
 
-    // Middleware to verify token and extract user ID
+   
     const verifyToken = (req, res, next) => {
-        const token = req.headers.authorization?.split(' ')[1]; // Get token from Authorization header
+        const token = req.headers.authorization?.split(' ')[1]; 
         if (!token) {
             return res.status(403).json({ message: 'No token provided' });
         }
@@ -35,7 +35,7 @@ mongoose.connect(url)
             if (err) {
                 return res.status(401).json({ message: 'Unauthorized' });
             }
-            req.userId = decoded.id; // Assuming the token contains the user ID
+            req.userId = decoded.id; 
             next();
         });
     };
@@ -82,22 +82,21 @@ app.post('/login', async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 });
-// GET /addtasks - Fetch tasks for the logged-in user
-// GET /addtasks - Fetch tasks for the logged-in user
+
 app.get('/addtasks', verifyToken, async (req, res) => {
-    const userId = req.userId; // Get user ID from the request
+    const userId = req.userId; 
     try {
-        const tasks = await Task.find({ userId }).sort({ priority: -1 }); // Sort by priority (highest first)
+        const tasks = await Task.find({ userId }).sort({ priority: -1 }); 
         res.status(200).json(tasks);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
 });
 
-// POST /addtasks - Add a new task for the logged-in user
+
 app.post('/addtasks', verifyToken, async (req, res) => {
     const { task, priority } = req.body;
-    const userId = req.userId; // Get user ID from the request
+    const userId = req.userId; 
     console.log("hello")
     console.log(userId)
     const newTask = new Task({ task, priority, userId });
@@ -110,7 +109,7 @@ app.post('/addtasks', verifyToken, async (req, res) => {
     }
 });
 
-// PUT /markAsDone - Mark a task as done for the logged-in user
+
 app.put('/markAsDone', verifyToken, async (req, res) => {
     const { id, completed } = req.body;
 
@@ -120,7 +119,7 @@ app.put('/markAsDone', verifyToken, async (req, res) => {
             return res.status(404).json({ message: 'Task not found' });
         }
 
-        // Ensure the task belongs to the user
+        
         if (task.userId.toString() !== req.userId) {
             return res.status(403).json({ message: 'Unauthorized' });
         }
