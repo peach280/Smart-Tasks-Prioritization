@@ -1,6 +1,4 @@
-/* App.css */
 
-/* General body styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,17 +8,14 @@ body {
   align-items: center;
   height: 100vh;
   background-image: url(bg.jpg);
-  background-size: cover; /* Ensure the image covers the entire screen */
-  background-position: center; /* Center the background image */
+  background-size: cover; 
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   animation: backgroundAnimation 8s ease-in-out infinite;
 }
 
-/* Keyframes for background animation */
 
-
-/* Styling for the main container */
 .body {
   text-align: center;
   padding: 30px;
@@ -35,7 +30,7 @@ body {
   background-color: aqua;
   font-weight: 600;
 }
-/* Header styling */
+=
 h1 {
   font-size: 3.5rem;
   color: #e7eaee;
@@ -43,10 +38,10 @@ h1 {
   font-weight: 600;
   opacity: 0;
   animation: fadeInText 2s ease-out forwards;
-  animation-delay: 0.5s; /* Delay for text to fade in after container */
+  animation-delay: 0.5s; 
 }
 
-/* Keyframes for fading in text */
+
 @keyframes fadeInText {
   0% {
     opacity: 0;
@@ -58,7 +53,7 @@ h1 {
   }
 }
 
-/* Keyframes for fade-in effect on container */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -70,7 +65,7 @@ h1 {
   }
 }
 
-/* Optional: Add hover effect on the body for interactivity */
+
 .body:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease-in-out;
