@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Task List Container */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Task Item Styling */
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+span {
+    color: #555;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Priority Text Styling */
+span {
+    font-weight: bold;
+    color: #4CAF50; /* Green for priority */
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Task Completion Styling */
+button {
+    background-color: #f44336;
+}
+
+button.completed {
+    background-color: #4CAF50;
+}
+
+button.completed:hover {
+    background-color: #45a049;
+}
+
+/* Spinner (for loading) */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+/* Adding responsiveness */
+@media (max-width: 768px) {
+    ul {
+        width: 95%;
+    }
+}
