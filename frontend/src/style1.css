@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-/* Task List Container */
+
 h2 {
     font-size: 2rem;
     color: #333;
@@ -18,7 +18,6 @@ h2 {
     text-align: center;
 }
 
-/* Task List */
 ul {
     list-style: none;
     padding: 0;
@@ -27,7 +26,6 @@ ul {
     max-width: 600px;
 }
 
-/* Task Item Styling */
 li {
     background-color: #fff;
     padding: 15px;
@@ -51,10 +49,10 @@ span {
     text-align: left;
 }
 
-/* Priority Text Styling */
+
 span {
     font-weight: bold;
-    color: #4CAF50; /* Green for priority */
+    color: #4CAF50; 
 }
 
 button {
@@ -75,7 +73,7 @@ button:focus {
     outline: none;
 }
 
-/* Task Completion Styling */
+
 button {
     background-color: #f44336;
 }
@@ -88,14 +86,13 @@ button.completed:hover {
     background-color: #45a049;
 }
 
-/* Spinner (for loading) */
+
 .loading {
     text-align: center;
     font-size: 1.5rem;
     color: #007BFF;
 }
 
-/* Adding responsiveness */
 @media (max-width: 768px) {
     ul {
         width: 95%;
