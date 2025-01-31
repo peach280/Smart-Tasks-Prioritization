@@ -16,7 +16,7 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/peach280/Smart_Task_Prioritization.git
    cd Smartization
    cd backend
-    npm install express mongoose dotenv
+   npm install express mongoose dotenv
    cd ../frontend
  
    ```
