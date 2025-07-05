@@ -1,0 +1,62 @@
+
+:root {
+	/* Primary theme colors */
+	--chat--color-primary: #ff4f81;
+	--chat--color-primary-shade-50: #ff3a6e;
+	--chat--color-primary-shade-100: #e63761;
+
+	--chat--color-secondary: #22d3ee;
+	--chat--color-secondary-shade-50: #06b6d4;
+
+	/* Neutrals */
+	--chat--color-white: #ffffff;
+	--chat--color-light: #f8fafc;
+	--chat--color-light-shade-50: #e2e8f0;
+	--chat--color-light-shade-100: #cbd5e1;
+	--chat--color-medium: #94a3b8;
+	--chat--color-dark: #0f172a;
+	--chat--color-disabled: #64748b;
+	--chat--color-typing: #334155;
+
+	/* Spacing and layout */
+	--chat--spacing: 1rem;
+	--chat--border-radius: 0.75rem;
+	--chat--transition-duration: 0.3s;
+
+	--chat--window--width: 420px;
+	--chat--window--height: 640px;
+
+	/* Header styling */
+	--chat--header-height: auto;
+	--chat--header--padding: var(--chat--spacing);
+	--chat--header--background: linear-gradient(to right, #0f172a, #1e293b);
+	--chat--header--color: var(--chat--color-white);
+	--chat--header--border-top: none;
+	--chat--header--border-bottom: 1px solid var(--chat--color-light-shade-50);
+	--chat--heading--font-size: 1.75em;
+	--chat--subtitle--font-size: 0.95em;
+	--chat--subtitle--line-height: 1.6;
+
+	/* Textarea */
+	--chat--textarea--height: 56px;
+
+	/* Messages */
+	--chat--message--font-size: 1rem;
+	--chat--message--padding: 0.75rem 1rem;
+	--chat--message--border-radius: var(--chat--border-radius);
+	--chat--message-line-height: 1.7;
+	--chat--message--bot--background: var(--chat--color-white);
+	--chat--message--bot--color: var(--chat--color-dark);
+	--chat--message--bot--border: 1px solid var(--chat--color-light-shade-50);
+	--chat--message--user--background: var(--chat--color-secondary);
+	--chat--message--user--color: var(--chat--color-dark);
+	--chat--message--user--border: none;
+	--chat--message--pre--background: #f1f5f9;
+
+	/* Toggle button */
+	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
+	--chat--toggle--color: var(--chat--color-white);
+	--chat--toggle--size: 64px;
+}
