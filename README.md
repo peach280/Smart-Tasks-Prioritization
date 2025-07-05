@@ -24,7 +24,13 @@ Before you begin, ensure you have met the following requirements:
      npm run dev
    ```
    Then in another terminal run
+
+
+
+
    ```
      cd ../frontend
      npm run dev
    ```
+   
+https://github.com/user-attachments/assets/2b31057a-ff62-4b73-b27a-c39bfa1b1f71
